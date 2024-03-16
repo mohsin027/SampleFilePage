@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.css'
 import { IoIosArrowDown } from "react-icons/io";
+import mailImage from '../../assets/mail.svg'
 
 
 export const Header = () => {
@@ -12,7 +13,7 @@ export const Header = () => {
                 <div className='menu-items'>
                     <div className='circle'>
 
-                    <img src="src\assets\mails.png" alt="image" />
+                    <img src={mailImage} alt="image" />
                     </div>
                     <span>Bulk</span>
                 </div>

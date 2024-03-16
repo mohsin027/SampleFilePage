@@ -27,21 +27,23 @@ export const ImportBox = () => {
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
-  const handleActiveDivClick = (e) => {
-    document.getElementById("fileInput").click();
-    setIsModalOpen(false);
-    console.log(e.target)
-    console.log('handle file');
-
+//   const handleActiveDivClick = (e) => {
+//     document.getElementById("fileInput").click();
+//     console.log(e.target)
+//     console.log('handle file');
     
-    setTimeout(()=>{
-        handleSubmit()
-    },3000)
-};
+    
+//     setTimeout(()=>{
+//         // handleSubmit()
+//     },3000)
+// };
 
-const handleSubmit = (e) =>{
+const handleFileChange = (e) =>{
+    const selectedFile = e.target.files[0];
+    setIsModalOpen(false);
+    setFile(selectedFile)
     setIsFileUpload(true);
-    console.log('submit');
+    console.log('submit', selectedFile);
 
   }
 
@@ -84,12 +86,11 @@ const handleSubmit = (e) =>{
             id="fileInput"
             name="file"
             style={{ display: "none" }}
-            onChange={(e) => console.log(e.target.files[0])} 
-            // onChange={handleSubmit} 
+            onChange={handleFileChange} 
             />
           <label
             htmlFor="fileInput"
-            onClick={handleActiveDivClick}
+            onClick={handleFileChange}
             className={`dotted-box ${isHovered ? "active" : "inactive"}`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -150,7 +151,7 @@ const handleSubmit = (e) =>{
           </div>
           <div className="d-flex mt-4">
             <div className="email-box">
-                <h4>sample.csv</h4>
+                <h4>{file.name}</h4>
                 <span>
               <span>
                 <IoFolderOpen />

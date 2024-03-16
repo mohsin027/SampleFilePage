@@ -1,0 +1,15 @@
+
+.alert-div{
+  height: 40px;
+  background-color: #F7DED5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #EB8D4E;
+  font-weight: 600;
+  font-size: 0.9em;
+  padding-top:10px;
+}
+.alert-div p:nth-child(2){
+ text-decoration: underline;
+}

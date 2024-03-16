@@ -1,0 +1,218 @@
+.import-box{
+    margin: 20px;
+    height: 400px;
+    background-color: white;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.import-box .circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #7E61FF;
+    padding: 9px;   
+}
+
+.import-box img{
+    width: 40px;
+    height: 40px;
+}
+.import-box h2{
+    font-size:2em;
+    font-weight: 500;
+    color:#32205E ;
+}
+.import-box p{
+    font-size: 1.1em;
+    color:#7E61FF ;
+}
+.modal-button{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    padding: 0px 20px;
+    background-color: #7E61FF;
+    color: white;
+    font-weight: bold;
+}
+
+.modal-button:hover{
+    background-color: #4f2de7;
+}
+
+
+
+
+.modal-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    z-index: 999; /* ensure it appears above other content */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align modal content at the bottom */
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    max-width: 577px;
+    max-height: 320px;
+    border-radius:10px;
+    animation: slide-up 0.3s ease forwards;
+  }
+  
+  @keyframes slide-up {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .close-button {
+    border-style: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #694af3  ;
+    background-color: transparent;
+  }
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.buttons span{
+    padding: 0px 10px;
+
+}
+.modal-content .buttons button{
+    width:200px;
+    border-style: none;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #694af3;
+  }
+  .modal-content button:nth-child(1){
+    background-color: #e7e4f6;
+  }
+
+  .dotted-box{
+    border: 1px dashed blue;
+    width: 100%;
+    border-radius: 5px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #694af3;
+    background-color: transparent;
+    flex-direction: column;
+}
+
+.dotted-box span{
+    font-size: 40px !important;
+}
+.dotted-box .dragText{
+    font-size: 10px !important;
+}
+.inactive{
+      background-color: none !important;
+    display: none;
+    
+}
+.active{
+      background-color: #e7e4f6;
+    display: flex;
+  }
+
+.file-page{
+    width: 100%;
+    /* background-color: red; */
+}
+.new-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.search{
+    max-width: 700px;
+    width: 100%;
+    margin: 5px 0px;
+    border-radius: 5px;
+    border: none ;
+}
+
+.email-box{
+    background-color: white;
+    width: 250px;
+    height: 400px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.email-box h4{
+    color: rgb(23, 23, 50);
+    font-size: 1em;
+}
+.email-box span:nth-child(2){
+    color: blue;
+    font-size: 0.9em;
+}
+.outer-circle{
+    background-color: #F8F8FF;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+
+}
+.inner-circle{
+    background-color: white;
+    margin: 15px;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+}
+
+.email-box button{
+    border-style: none;
+    width: 80%;
+    margin: 0px 25px;
+    height: 45px;
+    background-color: #3ED298;
+    border-radius: 5px;
+}
+
+
+
+  

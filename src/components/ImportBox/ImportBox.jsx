@@ -5,6 +5,7 @@ import { MdOutlineCopyAll } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
 import { FaCirclePlus } from "react-icons/fa6";
 import { FaPlus } from "react-icons/fa";
+import mailImage from '../../assets/mail.svg'
 
 export const ImportBox = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -115,7 +116,7 @@ const handleFileChange = (e) =>{
       {!isFileUpload && (
         <div className="import-box">
           <div className="circle">
-            <img src="src\assets\mail.svg" alt="mail" />
+            <img src={mailImage} alt="mail" />
           </div>
           <div>
             <h2>Import a list to verify</h2>

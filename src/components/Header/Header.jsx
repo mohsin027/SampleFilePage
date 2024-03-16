@@ -2,6 +2,11 @@ import React from 'react'
 import './Header.css'
 import { IoIosArrowDown } from "react-icons/io";
 import mailImage from '../../assets/mail.svg'
+import monitorImage from '../../assets/Monitor.svg'
+import VectorImage from '../../assets/Vector.svg'
+import TrayImage from '../../assets/tray.svg'
+import codeImage from '../../assets/code.svg'
+import mailsImage from '../../assets/mails.png'
 
 
 export const Header = () => {
@@ -20,28 +25,28 @@ export const Header = () => {
                 <div className='menu-items'>
                     <div className='circle'>
 
-                    <img src="src\assets\Monitor.svg" alt="image" />
+                    <img src={monitorImage} alt="image" />
                     </div>
                     <span>Monitor</span>
                 </div>
                 <div className='menu-items'>
                     <div className='circle'>
 
-                    <img src="src\assets\Vector.svg" alt="image" />
+                    <img src={VectorImage} alt="image" />
                     </div>
                     <span>Single</span>
                 </div>
                 <div className='menu-items'>
                     <div className='circle'>
 
-                    <img src="src\assets\Tray.svg" alt="image" />
+                    <img src={TrayImage} alt="image" />
                     </div>
                     <span>Deliverability</span>
                 </div>
                 <div className='menu-items'>
                     <div className='circle'>
 
-                    <img src="src\assets\code.svg" alt="image" />
+                    <img src={codeImage} alt="image" />
                     </div>
                     <span>API</span>
                 </div>
